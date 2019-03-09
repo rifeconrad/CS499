@@ -1,0 +1,4 @@
+﻿  level.cpp
+c:\users\conrad\desktop\enginuity\enginuity\zombiegame\level.cpp(39): warning C4018: '<': signed/unsigned mismatch
+c:\users\conrad\desktop\enginuity\enginuity\zombiegame\level.cpp(41): warning C4018: '<': signed/unsigned mismatch
+  ZombieGame.vcxproj -> C:\Users\Conrad\Desktop\Enginuity\Enginuity\Debug\ZombieGame.exe

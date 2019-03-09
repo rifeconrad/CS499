@@ -4,6 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enginuity", "Enginuity\Enginuity.vcxproj", "{46ED1511-272A-476A-AB3D-4BF049F52DE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2} = {0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SPEngine2D", "SPEngine2D\SPEngine2D.vcxproj", "{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZombieGame", "ZombieGame\ZombieGame.vcxproj", "{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2} = {0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +31,22 @@ Global
 		{46ED1511-272A-476A-AB3D-4BF049F52DE5}.Release|x64.Build.0 = Release|x64
 		{46ED1511-272A-476A-AB3D-4BF049F52DE5}.Release|x86.ActiveCfg = Release|Win32
 		{46ED1511-272A-476A-AB3D-4BF049F52DE5}.Release|x86.Build.0 = Release|Win32
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Debug|x64.ActiveCfg = Debug|x64
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Debug|x64.Build.0 = Debug|x64
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Debug|x86.ActiveCfg = Debug|Win32
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Debug|x86.Build.0 = Debug|Win32
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Release|x64.ActiveCfg = Release|x64
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Release|x64.Build.0 = Release|x64
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Release|x86.ActiveCfg = Release|Win32
+		{0EBAACE9-4F3F-4AF0-BE33-D611B4FCBED2}.Release|x86.Build.0 = Release|Win32
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Debug|x64.ActiveCfg = Debug|x64
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Debug|x64.Build.0 = Debug|x64
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Debug|x86.ActiveCfg = Debug|Win32
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Debug|x86.Build.0 = Debug|Win32
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Release|x64.ActiveCfg = Release|x64
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Release|x64.Build.0 = Release|x64
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Release|x86.ActiveCfg = Release|Win32
+		{91D1CC71-0084-40CB-9F18-1D7E7EC0072A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

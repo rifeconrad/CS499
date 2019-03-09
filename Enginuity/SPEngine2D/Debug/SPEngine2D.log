@@ -1,0 +1,6 @@
+﻿  timing.cpp
+c:\users\conrad\desktop\enginuity\enginuity\spengine2d\timing.cpp(33): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\conrad\desktop\enginuity\enginuity\spengine2d\timing.cpp(37): warning C4244: '=': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\conrad\desktop\enginuity\enginuity\spengine2d\timing.cpp(99): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\conrad\desktop\enginuity\enginuity\spengine2d\timing.cpp(107): warning C4244: 'argument': conversion from 'float' to 'Uint32', possible loss of data
+  SPEngine2D.vcxproj -> C:\Users\Conrad\Desktop\Enginuity\Enginuity\Debug\SPEngine2D.lib

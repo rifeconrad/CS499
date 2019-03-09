@@ -70,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Conrad\Desktop\Enginuity\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Conrad\Desktop\Enginuity\lib\SDL2image;C:\Users\Conrad\Desktop\Enginuity\lib\SOIL;C:\Users\Conrad\Desktop\Enginuity\lib\SDL2;C:\Users\Conrad\Desktop\Enginuity\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Conrad\Desktop\Enginuity\Enginuity;C:\Users\Conrad\Desktop\Enginuity\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Conrad\Desktop\Enginuity\Enginuity\Debug;C:\Users\Conrad\Desktop\Enginuity\lib\SDL2image;C:\Users\Conrad\Desktop\Enginuity\lib\SOIL;C:\Users\Conrad\Desktop\Enginuity\lib\SDL2;C:\Users\Conrad\Desktop\Enginuity\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\Conrad\Desktop\Enginuity\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Conrad\Desktop\Enginuity\lib\SDL2image;C:\Users\Conrad\Desktop\Enginuity\lib\SOIL;C:\Users\Conrad\Desktop\Enginuity\lib\SDL2;C:\Users\Conrad\Desktop\Enginuity\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Conrad\Desktop\Enginuity\Enginuity;C:\Users\Conrad\Desktop\Enginuity\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Conrad\Desktop\Enginuity\Enginuity\Debug;C:\Users\Conrad\Desktop\Enginuity\lib\SDL2image;C:\Users\Conrad\Desktop\Enginuity\lib\SOIL;C:\Users\Conrad\Desktop\Enginuity\lib\SDL2;C:\Users\Conrad\Desktop\Enginuity\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -85,7 +85,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;opengl32.lib;glfw3.lib;glew32.lib;glu32.lib;glm_static.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;opengl32.lib;glfw3.lib;glew32.lib;glu32.lib;glm_static.lib;SOIL.lib;SPEngine2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -109,7 +109,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;opengl32.lib;glfw3.lib;glew32.lib;glu32.lib;glm_static.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;opengl32.lib;glfw3.lib;glew32.lib;glu32.lib;glm_static.lib;SOIL.lib;SPEngine2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -128,17 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="end_errors.cpp" />
-    <ClCompile Include="GLSL_program.cpp" />
+    <ClCompile Include="bullet.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_engine.cpp" />
-    <ClCompile Include="sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="eng_errors.h" />
-    <ClInclude Include="GLSL_program.h" />
+    <ClInclude Include="bullet.h" />
     <ClInclude Include="main_engine.h" />
-    <ClInclude Include="sprite.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,11 +1,20 @@
 #pragma once
 
-#include "sprite.h"
+#include <SPEngine2D/sprite.h>
+#include <SPEngine2D/GLSL_program.h>
+#include <SPEngine2D/GLTexture.h>
+#include <SPEngine2D/window.h>
+#include <SPEngine2D/camera_2D.h>
+#include <SPEngine2D/sprite_batch.h>
+#include <SPEngine2D/input_manager.h>
+#include <SPEngine2D/timing.h>
 
 #include <SDL2/SDL.h>
 #include <GL/glew.h>
 
-#include "GLSL_program.h"
+#include "bullet.h"
+
+#include <vector>
 
 enum class EngineState {PLAY = 0, EXIT};
 class MainEngine
@@ -17,7 +26,7 @@ public:
 	void run();
 
 private:
-	SDL_Window* window;
+	SPEngine2D::Window window;
 
 	int screen_width;
 	int screen_height;
@@ -30,8 +39,20 @@ private:
 	void draw();
 	void engineLoop();
 
-	Sprite sprite;
+	const float MAX_FPS;
 
-	GLSLProgram color_program;
+	SPEngine2D::GLSLProgram color_program;
+
+	SPEngine2D::Camera2D camera;
+
+	SPEngine2D::SpriteBatch sprite_batch;
+
+	SPEngine2D::InputManager input_manager;
+
+	SPEngine2D::FPSLimiter fps_limiter;
+
+	std::vector<Bullet> bullets;
+
+	float time;
 };
 
